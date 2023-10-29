@@ -69,6 +69,7 @@ import MySkills  from '../components/skills/MySkills.vue'
     display: flex;
     flex-direction: column;
     user-select: none;
+    overflow: auto;
 }
 
 .top-container {

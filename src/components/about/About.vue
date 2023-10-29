@@ -28,6 +28,7 @@ h1 {
     margin: auto;
     text-align: justify;
     text-justify: inter-word;
+    overflow:hidden;
 }
 
 .inner-container {

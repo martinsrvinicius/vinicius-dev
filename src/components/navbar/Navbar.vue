@@ -2,7 +2,7 @@
     <va-navbar color="#34353a">
       <template #left>
         <va-navbar-item class="navbar-item-slot">
-          VINICIUS MARTINS
+          <img src="../../assets/developer.svg" alt="Vinicius">
         </va-navbar-item>
       </template>
       <template #right>
@@ -34,4 +34,12 @@
     cursor:pointer;
   }
     
+  img {
+    width:40px;
+    margin-left:50px
+  }
+
+  img:hover{
+    cursor:pointer;
+  }
   </style>
