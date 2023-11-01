@@ -13,7 +13,7 @@
                         <p style="position: relative;bottom:10px">Fullstack Developer
                         </p>
                     </div>
-                    <va-button preset="plain">
+                    <va-button preset="plain" href="#contact">
                         <p class="btn-contact">
                             Contact Me
                         </p>
@@ -46,7 +46,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="about">
             <About />
         </section>
 
@@ -54,13 +54,26 @@
             <MySkills />
         </section>
 
-        <section style="margin-top: 100px;">
+        <section style="margin-top: 100px;" id="portifolio">
             <Portifolio />
         </section>
 
         <section style="margin-top: 100px;">
             <Experience />
         </section>
+        
+        <section style="margin-top: 100px;">
+            <AcademicRecord />
+        </section>
+
+        <section style="margin-top: 100px;margin-bottom:30px;" id="contact">
+            <Contact />
+        </section>
+
+        <section>
+            <p class="bye">"Thanks for scrolling"</p>
+        </section>
+
     </div>
 </template>
 
@@ -70,6 +83,8 @@ import About  from '../components/about/About.vue'
 import MySkills  from '../components/skills/MySkills.vue'
 import Portifolio  from '../components/portifolio/Portifolio.vue'
 import Experience  from '../components/experience/Experience.vue'
+import AcademicRecord  from '../components/academic/AcademicRecord.vue'
+import Contact  from '../components/contact/Contact.vue'
 
 </script>
 
@@ -167,5 +182,10 @@ p {
 .inner-left {
     width: 70%;
     margin: auto;
+}
+
+.bye {
+    color:#ffc86b;
+    font-size:1.5rem;
 }
 </style>
