@@ -1,13 +1,5 @@
-<script setup lang="ts">
-import Navbar from '../components/navbar/Navbar.vue'
-import About  from '../components/about/About.vue'
-import MySkills  from '../components/skills/MySkills.vue'
-
-</script>
-
 <template>
     <div class="page">
-
         <section class=" top-container">
             <div class="navbar">
                 <Navbar />
@@ -61,8 +53,25 @@ import MySkills  from '../components/skills/MySkills.vue'
         <section>
             <MySkills />
         </section>
+
+        <section style="margin-top: 100px;">
+            <Portifolio />
+        </section>
+
+        <section style="margin-top: 100px;">
+            <Experience />
+        </section>
     </div>
 </template>
+
+<script setup lang="ts">
+import Navbar from '../components/navbar/Navbar.vue'
+import About  from '../components/about/About.vue'
+import MySkills  from '../components/skills/MySkills.vue'
+import Portifolio  from '../components/portifolio/Portifolio.vue'
+import Experience  from '../components/experience/Experience.vue'
+
+</script>
 
 <style scoped>
 .page {
