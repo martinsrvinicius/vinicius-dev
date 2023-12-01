@@ -2,11 +2,12 @@
     <div class="main">
         <div class="top">
             <div class="year">
-                {{$props.item.year}}
+                {{ $props.item.year }}
             </div>
             <div class="item-flex">
                 <div class="golden"><img src="../../assets/golden.svg" alt=""></div>
-                <div class=" title"><span>{{props.item.company}}</span><span v-if="props.item.current"> - ({{ props.item.current }})</span></div>
+                <div class=" title"><span>{{ props.item.company }}</span><span v-if="props.item.current"> - ({{
+                    props.item.current }})</span></div>
             </div>
         </div>
 
@@ -16,7 +17,8 @@
             <div class="right">
                 <p>
                     {{ props.item.role }} <br>
-                   <span><a :href="props.item.url" target="_blank"> {{ props.item.url }}</a></span>  <span>{{ props.item.location }}</span>
+                    <span><a :href="props.item.url" target="_blank"> {{ props.item.url }}</a></span> <span>{{
+                        props.item.location }}</span>
                 </p>
                 <p>
                     {{ props.item.description }}
@@ -38,7 +40,7 @@ const props = defineProps(['item'])
 
 <style scoped>
 .main {
-    max-width: 1500px;
+    max-width: 100%;
     margin: auto;
 }
 
@@ -56,8 +58,9 @@ const props = defineProps(['item'])
     justify-content: end;
     padding-right: 30px;
     width: 20%;
-   
+    text-align: end;
 }
+
 
 .item-flex {
     display: flex;
@@ -69,18 +72,18 @@ const props = defineProps(['item'])
     border-left: 1.3px solid rgb(229, 229, 229);
     text-align: justify;
     text-justify: inter-word;
-    padding-left: 50px;
+    padding-left: 20px;
 }
 
 .title {
+    width: 245px;
     font-size: 1.5rem;
-    padding-left: 19px;
+    padding-left: 5px;
+    text-align: start;
 }
 
 .golden {
-
     filter: drop-shadow(0 0 .5em #ffc86b);
-
 }
 
 img {
@@ -93,6 +96,7 @@ img {
 .tech-container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .tech {
@@ -101,17 +105,38 @@ img {
     justify-content: center;
     font-size: .8rem;
     height: 30px;
-    min-width:80px;
+    min-width: 80px;
     border: 1px solid #ffc86b;
     border-radius: 20px;
     margin-right: 5px;
+    margin-bottom: 10px;
 }
 
 a {
+    word-wrap: break-word;
     color: white;
 }
 
 a:hover {
     cursor: pointer;
+}
+
+@media screen and (min-width: 400px) {
+    .main {
+        max-width: 1500px;
+    }
+
+    .right {
+        padding-left: 50px;
+    }
+
+    .title {
+        width: 100%;
+        padding-left: 19px;
+    }
+
+    .tech {
+        margin-right: 5px;
+    }
 }
 </style>

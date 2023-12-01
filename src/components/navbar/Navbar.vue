@@ -1,7 +1,7 @@
 <template>
   <va-navbar color="#34353a">
     <template #left>
-      <va-navbar-item class="navbar-item-slot">
+      <va-navbar-item class="navbar-item-slot left">
         <img src="../../assets/developer.svg" alt="Vinicius">
       </va-navbar-item>
     </template>
@@ -25,6 +25,11 @@
 </template>
 
 <style scoped>
+.left {
+  position: relative;
+  right: 30px;
+}
+
 .item-slot {
   width: fit-content;
   user-select: none;
@@ -46,5 +51,11 @@ img:hover {
 
 a {
   color: white
+}
+
+@media screen and (min-width: 400px) {
+  .left {
+    position: unset;
+  }
 }
 </style>

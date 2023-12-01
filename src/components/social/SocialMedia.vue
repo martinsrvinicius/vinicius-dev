@@ -26,14 +26,14 @@
 .social-container {
     display: flex;
     text-align: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     max-width: 600px;
 }
 
 .item-social {
     height: 40px;
     display: flex;
-
+    justify-content: center;
 }
 
 .item-social>span {
@@ -42,10 +42,23 @@
 
 .img-social {
     width: 25px;
-    margin-right: 10px;
+    margin-right: 0px;
 }
 
 span {
     font-size: 1rem;
+}
+
+@media screen and (min-width: 400px) {
+    .social-container {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    max-width: 600px;
+}
+.img-social {
+    width: 25px;
+    margin-right: 0px;
+}
 }
 </style>

@@ -10,10 +10,8 @@
 
             <template #body>
                 <div class="content">
-
-                    <va-rating class="rating" v-model="value" color="#ffff"  :size="25"  disabled 
-                    />
-                <span>{{ props.item.description }}</span>
+                    <va-rating class="rating" v-model="value" color="#ffff" :size="25" disabled />
+                    <span>{{ props.item.description }}</span>
                 </div>
             </template>
         </va-collapse>
@@ -29,11 +27,6 @@ const ImgPath = computed(() => {
     const path = new URL(`../../assets/${props.item.name}.svg`, import.meta.url).href;
     return path
 });
-
-
-
-
-
 
 </script>
 
@@ -88,6 +81,6 @@ img {
 span {
     text-align: justify;
     text-justify: inter-word;
-    margin:4px;
+    margin: 4px;
 }
 </style>
