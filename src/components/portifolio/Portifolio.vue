@@ -20,7 +20,6 @@ const skills = ref([
         description: 'System built in Vue and PHP that allows scheduling, confirmation of appointments and cancellation of beauty services.',
         link:'https://rosemeri-beauty.vercel.app/'
     },
-    
 ])
 
 
