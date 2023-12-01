@@ -49,7 +49,7 @@ span {
     font-size: 1rem;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 450px) {
     .social-container {
     display: flex;
     text-align: center;

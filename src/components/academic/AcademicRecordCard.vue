@@ -121,7 +121,7 @@ a:hover {
     cursor: pointer;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 450px) {
     .main {
         max-width: 1500px;
     }

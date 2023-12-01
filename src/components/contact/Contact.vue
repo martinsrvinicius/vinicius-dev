@@ -110,7 +110,7 @@ h1 {
     top: 25px;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 450px) {
     .empty-bottom {
         min-width: 38%;
     }

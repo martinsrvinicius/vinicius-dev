@@ -164,7 +164,7 @@ p {
         color: #ffc86b;
         font-size: 1.5rem;
     }
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 450px) {
     .page {
         display: flex;
         flex-direction: column;

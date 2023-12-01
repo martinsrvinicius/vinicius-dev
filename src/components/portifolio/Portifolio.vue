@@ -17,7 +17,8 @@ const skills = ref([
         id: 1,
         name: 'rosemeri.png',
         text: 'Rosemeri Beauty',
-        description: 'System built in Vue and PHP that allows scheduling, confirmation of appointments and cancellation of beauty services.'
+        description: 'System built in Vue and PHP that allows scheduling, confirmation of appointments and cancellation of beauty services.',
+        link:'https://rosemeri-beauty.vercel.app/'
     },
     
 ])

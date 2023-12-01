@@ -53,7 +53,7 @@ a {
   color: white
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 450px) {
   .left {
     position: unset;
   }
