@@ -142,6 +142,13 @@ const skills = ref([
         rate: 3,
         description:'Confortable working with it.'
     },
+    {
+        id: 19,
+        name: 'postman',
+        text: 'Postman',
+        rate: 4,
+        description:'Confortable working with it.'
+    },
 ])
 
 
