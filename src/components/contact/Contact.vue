@@ -15,6 +15,11 @@
                 <img src="../../assets/phone.svg" />
                 <p><a href="tel:+351-962-468-873">(+351) 962 468 873</a></p>
             </div>
+
+            <div class="item">
+                <img src="../../assets/download.svg" />
+                <p><a href="../../../../pdf/Vinicius_Martins_Resume.pdf" target="_blank">Download Resume</a></p>
+            </div>
         </div>
 
         <div class="bottom">
@@ -120,8 +125,9 @@ h1 {
     }
 
     .inner-container {
-        width: 550px;
+        width: 70%;
         flex-direction: row;
+        justify-content: space-around;
     }
 }
 </style>
