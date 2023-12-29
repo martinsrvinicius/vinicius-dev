@@ -15,6 +15,13 @@ import { ref } from 'vue'
 const skills = ref([
     {
         id: 1,
+        name: 'portifolio.png',
+        text: 'Portifolio',
+        description: 'Frontend web application project of my Portifolio built with Vue js, HTML and CSS. ',
+        link:'https://github.com/martinsrvinicius/vinicius-dev'
+    },
+    {
+        id: 2,
         name: 'rosemeri.png',
         text: 'Rosemeri Beauty',
         description: 'System built in Vue and PHP that allows scheduling, confirmation of appointments and cancellation of beauty services.',

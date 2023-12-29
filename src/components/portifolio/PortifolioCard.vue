@@ -6,10 +6,10 @@
             </a>
             <div :class="[isHover ? 'show' : 'hide']">
                 <p>{{ props.item.text }}</p>
-                <p>{{ props.item.description }}</p>
+                <p :class="[isHover ? 'text-desc-large' : 'text-desc-small']" >{{ props.item.description }}</p>
             </div>
             <div class="img-position" :class="[!isHover ? 'img-container' : 'img-container2']">
-                <img :src="ImgPath" alt="Imagem">
+                <img  :src="ImgPath" alt="Imagem">
                 <p>{{ props.item.text }}</p>
             </div>
         </div>
@@ -149,9 +149,24 @@ span {
     border-radius: 5px;
 }
 
+.btn-link2:hover {
+    background-color: #ffc96b38;
+    
+}
+
 .img-position {
     position: relative;
     bottom: 150px;
+}
+
+.text-desc-small {
+    height: 80px;
+    overflow: auto;
+}
+
+.text-desc-large {
+    height: 80px;
+    overflow: auto;
 }
 
 @media screen and (min-width: 450px) {
